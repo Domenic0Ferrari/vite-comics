@@ -50,6 +50,7 @@ header {
 
     .container {
         @include container_general;
+        background-color: #FFFF;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -63,11 +64,9 @@ header {
 
     ul {
         display: flex;
-        list-style: none;
         gap: .7rem;
 
         a {
-            text-decoration: none;
             color: #585350;
 
             &:hover {

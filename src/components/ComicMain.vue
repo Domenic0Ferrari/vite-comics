@@ -3,7 +3,9 @@
 
 <template>
     <div class="container">
-        <div class="main_top"></div>
+        <div class="main_top">
+            <span class="content"> CONTENT GOES HERE </span>
+        </div>
         <div class="main_bottom"></div>
     </div>
 </template>
@@ -22,6 +24,13 @@
     .main_bottom {
         height: 100px;
         background-color: #0282F9;
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 </style>
