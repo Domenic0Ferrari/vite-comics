@@ -43,15 +43,13 @@
 
 <style lang="scss" scoped>
 @use './../assets/style/general.scss' as *;
+@use './../assets/style/partials/container' as *;
 
 header {
     background-color: white;
 
     .container {
-        max-width: 1000px;
-        padding-inline: 0.2rem;
-        background-color: salmon;
-        margin-inline: auto;
+        @include container_general;
         display: flex;
         justify-content: space-between;
         align-items: center;

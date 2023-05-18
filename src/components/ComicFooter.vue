@@ -11,20 +11,20 @@
 </template>
 
 <style lang="scss" scoped>
+@use './../assets/style/partials/container' as *;
+
 .container {
-    max-width: 1000px;
-    padding-inline: 0.2rem;
-    background-color: gold;
-    margin-inline: auto;
+    @include container_general;
+}
 
-    .footer_top {
-        height: 250px;
-        background-color: bisque;
-    }
 
-    .footer_bottom {
-        height: 150px;
-        background-color: #303030;
-    }
+.footer_top {
+    height: 250px;
+    background-color: bisque;
+}
+
+.footer_bottom {
+    height: 150px;
+    background-color: #303030;
 }
 </style>

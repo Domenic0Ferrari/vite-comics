@@ -9,11 +9,10 @@
 </template>
 
 <style lang="scss" scoped>
+@use './../assets/style/partials/container' as *;
+
 .container {
-    max-width: 1000px;
-    padding-inline: 0.2rem;
-    background-color: brown;
-    margin-inline: auto;
+    @include container_general;
 
     .main_top {
         height: 100px;
