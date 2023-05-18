@@ -42,12 +42,14 @@
 </template>
 
 <style lang="scss" scoped>
+@use './../assets/style/general.scss' as *;
+
 header {
     background-color: white;
 
     .container {
         max-width: 1000px;
-        height: 100px;
+        padding-inline: 0.2rem;
         background-color: salmon;
         margin-inline: auto;
         display: flex;
@@ -56,7 +58,7 @@ header {
     }
 
     .quadrato {
-        height: 100%;
+        height: 100px;
         width: 100px;
         background-color: gold;
     }
@@ -71,7 +73,7 @@ header {
             color: #585350;
 
             &:hover {
-                color: blue;
+                color: #0282F9;
             }
         }
     }

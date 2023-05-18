@@ -17,11 +17,6 @@ export default {
   <ComicFooter />
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+<style lang="scss">
+@use './assets/style/general.scss' as *;
 </style>
