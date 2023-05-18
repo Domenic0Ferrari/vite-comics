@@ -6,7 +6,25 @@
         <div class="main_top">
             <span class="content"> CONTENT GOES HERE </span>
         </div>
-        <div class="main_bottom"></div>
+        <div class="main_bottom">
+            <ul>
+                <li>
+                    <a href="#"><span>DIGITAL COMICS</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>DIGITAL COMICS</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>DIGITAL COMICS</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>DIGITAL COMICS</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>DIGITAL COMICS</span></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -19,18 +37,28 @@
     .main_top {
         height: 100px;
         background-color: #1C1C1C;
+
+        .content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     .main_bottom {
         height: 100px;
         background-color: #0282F9;
+
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: .5rem;
+        }
     }
 
-    .content {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
 </style>
