@@ -12,16 +12,16 @@
                     <a href="#"><span>DIGITAL COMICS</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>DIGITAL COMICS</span></a>
+                    <a href="#"><span>DC MERCHANDISE</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>DIGITAL COMICS</span></a>
+                    <a href="#"><span>SUBSCRIPTION</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>DIGITAL COMICS</span></a>
+                    <a href="#"><span>COMIC SHOP LOCATOR</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>DIGITAL COMICS</span></a>
+                    <a href="#"><span>DC POWER VISA</span></a>
                 </li>
             </ul>
         </div>

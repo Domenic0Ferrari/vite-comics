@@ -7,34 +7,34 @@
             <div class="quadrato"></div>
             <ul>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">CHARACTERS</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">COMICS</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">MOVIES</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">TV</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">GAMES</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">COLLECTIBLES</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">VIDEOS</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">FANS</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">NEWS</a>
                 </li>
                 <li>
-                    <a href="#">CIAO</a>
+                    <a href="#">SHOP</a>
                 </li>
             </ul>
         </div>
@@ -70,6 +70,7 @@ header {
             color: #585350;
 
             &:hover {
+                border-bottom: 1px solid #0282F9;
                 color: #0282F9;
             }
         }
