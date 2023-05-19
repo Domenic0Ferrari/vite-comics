@@ -70,7 +70,8 @@ header {
             color: #585350;
 
             &:hover {
-                border-bottom: 1px solid #0282F9;
+                padding-bottom: 2rem;
+                border-bottom: 5px solid #0282F9;
                 color: #0282F9;
             }
         }
