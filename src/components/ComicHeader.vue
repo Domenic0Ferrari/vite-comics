@@ -1,40 +1,30 @@
 <script>
+export default {
+    data() {
+        return {
+            vociMenu: [
+                'CHARACTCERS',
+                'COMICS',
+                'MOVIE',
+                'TV',
+                'GAMES',
+                'COLLECTIBLES',
+                'VIDEO',
+                'FANS',
+                'NEWS',
+                'SHOP']
+        }
+    }
+}
 </script>
 
 <template>
     <header>
         <div class="container">
-            <div class="quadrato"></div>
+            <img src="../assets/img/dc-logo.png" alt="#">
             <ul>
-                <li>
-                    <a href="#">CHARACTERS</a>
-                </li>
-                <li>
-                    <a href="#">COMICS</a>
-                </li>
-                <li>
-                    <a href="#">MOVIES</a>
-                </li>
-                <li>
-                    <a href="#">TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#">COLLECTIBLES</a>
-                </li>
-                <li>
-                    <a href="#">VIDEOS</a>
-                </li>
-                <li>
-                    <a href="#">FANS</a>
-                </li>
-                <li>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                    <a href="#">SHOP</a>
+                <li v-for="voce in vociMenu">
+                    <a href="#">{{ voce }}</a>
                 </li>
             </ul>
         </div>
@@ -56,15 +46,9 @@ header {
         align-items: center;
     }
 
-    .quadrato {
-        height: 100px;
-        width: 100px;
-        background-color: gold;
-    }
-
     ul {
         display: flex;
-        gap: .7rem;
+        gap: 1rem;
 
         a {
             color: #585350;
