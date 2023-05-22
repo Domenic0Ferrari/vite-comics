@@ -93,13 +93,50 @@ export default {
             <a href="#">CURRENT SERIES</a>
         </button>
     </div>
-    <div class="main_bottom">
+    <div class="main_center">
         <div class="container">
             <ul>
                 <li>
                     <cardMain v-for="comic in arrComics" :key="comic.series" :thumb="comic.thumb" :series="comic.series" />
                 </li>
             </ul>
+            <button class="more">
+                <a href="#">LOAD MORE</a>
+            </button>
+        </div>
+    </div>
+    <div class="main_bottom">
+        <div class="container">
+            <div class="square">
+                <div class="img_square">
+                    <img src="../assets/img/buy-comics-digital-comics.png" alt="#">
+                </div>
+                <a href="#">DIGITAL COMICS</a>
+            </div>
+            <div class="square">
+                <div class="img_square">
+                    <img src="../assets/img/buy-comics-merchandise.png" alt="#">
+                </div>
+                <a href="#">DC MERCHANDISE</a>
+            </div>
+            <div class="square">
+                <div class="img_square">
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="#">
+                </div>
+                <a href="#">SUBSCRIPTION</a>
+            </div>
+            <div class="square">
+                <div class="img_square">
+                    <img src="../assets/img/buy-comics-shop-locator.png" alt="#">
+                </div>
+                <a href="#">COMIC SHOP LOCATOR</a>
+            </div>
+            <div class="square">
+                <div class="img_square">
+                    <img src="../assets/img/buy-dc-power-visa.svg" alt="#">
+                </div>
+                <a href="#">DC POWER VISA</a>
+            </div>
         </div>
     </div>
 </template>
@@ -133,12 +170,12 @@ export default {
     }
 }
 
-.main_bottom {
+.main_center {
     background-color: #1C1C1C;
 
     .container {
         @include container_general;
-        padding-top: 2rem;
+        padding: 2rem 0;
 
         li {
             display: flex;
@@ -146,6 +183,51 @@ export default {
             gap: .5rem;
             justify-content: space-between;
         }
+    }
+
+    .more {
+        background-color: #0282F9;
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+        border: 1px solid #0282F9;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.main_bottom {
+    background-color: #0282F9;
+
+    .container {
+        @include container_general;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .square {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .img_square {
+                height: 50px;
+                width: 45px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            a {
+                font-size: 14px;
+                color: white;
+            }
+        }
+
     }
 }
 </style>
