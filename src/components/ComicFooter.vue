@@ -3,8 +3,8 @@
 
 <template>
     <footer>
-        <div class="container">
-            <div class="footer_top">
+        <div class="footer_top">
+            <div class="container">
                 <div class="column">
                     <span>DC COMICS
                     </span>
@@ -38,9 +38,14 @@
                     <a href="#">CIAO</a>
                     <a href="#">CIAO</a>
                     <a href="#">CIAO</a>
+                </div>
+                <div class="footer_img">
+                    <img src="../assets/img/dc-logo-bg.png" alt="#">
                 </div>
             </div>
-            <div class="footer_bottom">
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
                 <button class="sign">SIGN-UP NOW!</button>
                 <ul>
                     <li> <a href="#">FOLLOW US</a>
@@ -58,34 +63,53 @@
                 </ul>
             </div>
         </div>
+
     </footer>
 </template>
 
 <style lang="scss" scoped>
 @use './../assets/style/partials/container' as *;
 
-.container {
-    @include container_general;
-}
+
 
 
 .footer_top {
-    height: 250px;
-    background-color: orange;
-    display: flex;
-    gap: 1rem;
+    height: 300px;
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 1rem;
 
-    .column {
+    .container {
+        @include container_general;
         display: flex;
-        flex-direction: column;
-        gap: .2rem;
+        gap: 1.5rem;
 
-        a {
-            color: #303030;
-            font-size: 12px;
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+
+            a {
+                color: gainsboro;
+                font-size: 10px;
+            }
+        }
+
+        .footer_img {
+            height: 450px;
+            position: absolute;
+
+            img {
+                height: 100%;
+                position: relative;
+                top: -100px;
+                left: 550px;
+            }
         }
     }
+
+
 }
 
 .footer_bottom {
