@@ -50,18 +50,19 @@
                 <ul>
                     <li> <a href="#">FOLLOW US</a>
                     </li>
-                    <li> <a href="#">CIAO</a>
+                    <li> <a href="#"><img src="../assets/img/footer-facebook.png" alt="#"></a>
                     </li>
-                    <li> <a href="#">CIAO</a>
+                    <li> <a href="#"><img src="../assets/img/footer-periscope.png" alt="#"></a>
                     </li>
-                    <li> <a href="#">CIAO</a>
+                    <li> <a href="#"><img src="../assets/img/footer-pinterest.png" alt="#"></a>
                     </li>
-                    <li> <a href="#">CIAO</a>
+                    <li> <a href="#"><img src="../assets/img/footer-twitter.png" alt="#"></a>
                     </li>
-                    <li> <a href="#">CIAO</a>
+                    <li> <a href="#"><img src="../assets/img/footer-youtube.png" alt="#"></a>
                     </li>
                 </ul>
             </div>
+            <!-- FIXARE LO STILE -->
         </div>
 
     </footer>
@@ -115,23 +116,30 @@
 .footer_bottom {
     height: 150px;
     background-color: #303030;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    .sign {
-        border: 2px solid blue;
-        background-color: #303030;
-        padding: 1rem;
-    }
-
-    ul {
+    .container {
+        @include container_general;
+        height: 100%;
         display: flex;
-        gap: .5rem;
+        align-items: center;
+        justify-content: space-between;
 
-        a {
-            color: white;
+        .sign {
+            border: 2px solid blue;
+            background-color: #303030;
+            padding: 1rem;
+        }
+
+        ul {
+            display: flex;
+            gap: .5rem;
+
+            a {
+                color: #0282F9;
+            }
         }
     }
+
+
 }
 </style>
